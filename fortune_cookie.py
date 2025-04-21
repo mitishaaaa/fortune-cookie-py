@@ -1,20 +1,21 @@
-import tkinter as tk
 import random
 
-# List of fortunes
-fortunes = [
-    "Today will be your lucky day!",
-    "You will achieve your dreams soon.",
-    "Happiness is just around the corner.",
-    "Stay strong — good things are coming.",
-    "Believe in yourself and magic will happen.",
-    "A big opportunity is coming your way!",
-    "Trust your instincts — they are right.",
-    "Success is a journey, not a destination."
-]
+def fortune_cookie():
+    fortunes = [
+        "You will have a great day!",
+        "Something wonderful is about to happen.",
+        "Expect good news soon.",
+        "A new opportunity is on the horizon.",
+        "You will make a valuable connection.",
+        "Happiness will find you when you least expect it.",
+        "Be patient — good things take time.",
+        "You are stronger than you think.",
+        "Your hard work will soon pay off.",
+        "Adventure is coming your way!"
+    ]
+    
+    print("🥠 You crack open the fortune cookie...")
+    print("✨ Your fortune: ", random.choice(fortunes))
 
-# Function to pick a random fortune
-def get_fortune():
-    fortune = random.choice(fortunes)
-    fortune_label.config(text=fortune)
-
+if __name__ == "__main__":
+    fortune_cookie()
